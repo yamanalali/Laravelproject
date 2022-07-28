@@ -31,14 +31,12 @@ class HomeController extends Controller
        $sliderdata=Service::limit(3)->get();
        $servicelist1=Service::all();
        $setting= Setting::first();
-       $categorylist1=Category::limit(3)->get();
 
        return view( 'home.index',[
            "page" => $page ,
            "setting" => $setting ,
            "sliderdata" => $sliderdata ,
            "servicelist1" => $servicelist1,
-            "categorylist1" => $categorylist1 ,
 
        ]);
 
