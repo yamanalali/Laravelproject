@@ -25,7 +25,7 @@
                 <div class="col-lg-7 mb-5">
                     <div class="contact-form">
                         <div id="success" ></div>
-                            @include('home.message')
+
                         <form action="{{route('storemessage')}}" novalidate="novalidate" method="post">
                             @csrf
                             <div class="control-group">

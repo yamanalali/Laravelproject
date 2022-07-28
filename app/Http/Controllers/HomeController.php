@@ -32,7 +32,7 @@ class HomeController extends Controller
        $servicelist1=Service::all();
        $setting= Setting::first();
 
-       return view( 'home.index',[
+       return view( 'Home.index',[
            "page" => $page ,
            "setting" => $setting ,
            "sliderdata" => $sliderdata ,

@@ -41,7 +41,7 @@
         </div>
 
         <div class="col-lg-7 pb-5">
-            @include('home.message')
+
 
             <h3 class="font-weight-semi-bold">{{$data->title}}</h3>
 
