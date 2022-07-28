@@ -56,7 +56,7 @@
                     <div class="login-title">
                         <h2 class="text-center text-primary">Login To DeskApp</h2>
                     </div>
-                    @include('home.message')
+
                     <form action="{{route('loginadmincheck')}}" method="post">
                         @csrf
                         <div class="select-role">
@@ -75,7 +75,7 @@
                                 </label>
                             </div>
                         </div>
-                        @include('home.message')
+
 
                         <div class="input-group custom">
                             <input type="text" name="email" class="form-control form-control-lg" placeholder="Email">
