@@ -83,7 +83,7 @@
         </div>
         @endforeach
         <div class="carousel-item active" style="height: 410px;">
-            <img class="img-fluid" src="{{Storage::URL($rs->service_id = 13)}}" style="width: 1366px;height: 500px">
+            <img class="img-fluid" src="{{Storage::URL($rs->service_id)}}" style="width: 1366px;height: 500px">
         </div>
     </div>
     <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
