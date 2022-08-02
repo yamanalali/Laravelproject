@@ -7,7 +7,7 @@
 @section('icon',Storage::URL($setting->icon))
 
 @section('slider')
-     @include('Home.slider')
+     @include('Home.Slider')
 @endsection
 
 @section('content')
