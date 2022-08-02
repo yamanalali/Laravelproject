@@ -7,7 +7,7 @@
 @section('icon',Storage::URL($setting->icon))
 
 @section('slider')
-     @include('home.slider')
+     @include('Home.slider')
 @endsection
 
 @section('content')
@@ -45,23 +45,6 @@
     <!-- Featured End -->
 
 
-
-    <!-- Categories Start -->
-    <div class="container-fluid pt-5">
-        <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">Categories</span></h2>
-        </div>
-        <div class="row px-xl-5 pb-3">
-            @foreach( $categorylist1 as $rs )
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="{{Storage::URL($rs->image)}}" alt="" style="width: 500px;width: 400px">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">{{$rs->title}}</h5>
-                </div>
-            </div>
-            @endforeach
 
 
 

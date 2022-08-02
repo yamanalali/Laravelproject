@@ -37,7 +37,7 @@ class CategoryController extends Controller
     {
         //
         $data= Category::all();
-        return view(  'admin.category.index',[ "data" => $data ]);
+        return view(  'Admin.category.index',[ "data" => $data ]);
     }
 //[ ]
     /**
@@ -49,7 +49,7 @@ class CategoryController extends Controller
     {
         //
         $data=Category::all();
-        return view ( 'admin.category.create', [
+        return view ( 'Admin.category.create', [
             "data" => $data
         ]);
     }
@@ -75,7 +75,7 @@ class CategoryController extends Controller
         }
         $data->status = $request->status;
         $data->save();
-        return redirect(to:'admin/category');
+        return redirect(to:'Admin/category');
 
 
 
@@ -92,7 +92,7 @@ class CategoryController extends Controller
         //
        // echo 'Show area: ', $id;
         $data = Category::find($id);
-        return view(  'admin.category.show',[ "data" => $data ]);
+        return view(  'Admin.category.show',[ "data" => $data ]);
     }
 
     /**
@@ -106,7 +106,7 @@ class CategoryController extends Controller
         //
         $data = Category::find($id);
         $datalist = Category::all();
-        return view(  'admin.category.edit',[ 'data' => $data, 'datalist' => $datalist]);
+        return view(  'Admin.category.edit',[ 'data' => $data, 'datalist' => $datalist]);
 
 
     }
